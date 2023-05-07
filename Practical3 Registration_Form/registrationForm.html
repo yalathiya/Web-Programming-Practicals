@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="registrationForm.css" />
+    <script src="registrationForm.js"></script>
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="send_email.php" method="post">
+        <h1 class="mainHeading">Registration Form</h1>
+        <hr />
+        <h2>Contact Information</h2>
+        <p>
+          Name :
+          <input
+            id="name"
+            type=""
+            name="name"
+            required
+            placeholder="Sachin Tendulkar"
+          />
+        </p>
+        <fieldset>
+          <legend>Gender</legend>
+          <p>
+            Male <input type="radio" name="gender" id="male" /> Female
+            <input type="radio" name="gender" id="Female" />
+          </p>
+        </fieldset>
+        <p>
+          Address:
+          <textarea
+            name="address"
+            id="add"
+            cols="100"
+            rows="5"
+            placeholder="House No., Building No., Area, City, State, Pincode"
+          ></textarea>
+        </p>
+        <p>
+          Email
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="abc@amail.com"
+          />
+        </p>
+        <p>
+          Pincode
+          <input type="number" name="pin" id="pin" placeholder="123456" />
+        </p>
+        <h2>Payment Information</h2>
+        <p>
+          card Type:
+          <select name="card_type" id="card_type" required>
+            <option value="">----Select a Card Type----</option>
+            <option value="visa">Visa</option>
+            <option value="MasterCard">Master card</option>
+          </select>
+        </p>
+        <p>
+          Card Number
+          <input
+            type="number"
+            name="Card_number"
+            id="card_Number"
+            required
+            placeholder="1111 1111 1111"
+          />
+        </p>
+        <p>
+          Expiration Date
+          <input type="date" name="exp_date" id="exp_Date" required />
+        </p>
+        <p>
+          cvv
+          <input
+            type="password"
+            name="cvv"
+            id="cvv"
+            required
+            placeholder="111"
+          />
+        </p>
+        <div class="btnn">
+          <input onClick="validation()" type="submit" value="Register" />
+          <input type="reset" value="Reset" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+* {
+  /* background-color: gray; */
+}
+.mainBox {
+  border: 1px solid black;
+  /* background-color: white; */
+  /* display: flex; */
+  width: 70%;
+  /* align-items: center; */
+  float: center;
+  margin-left: 12.5em;
+  margin-top: 3em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.heading {
+  display: flex;
+  border: 1px solid black;
+  background-color: skyblue;
+}
+
+.logo {
+  flex: left;
+}
+.info {
+  flex: right;
+}
+.first {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.first > #enrollmentInput {
+  flex: "20rem";
+}
+.first > #refresh {
+  flex: "1rem";
+}
+.first > .captcha {
+  flex: auto;
+}
+.first > #captchaValidation {
+  flex: auto;
+}
+.first > #search {
+  flex: auto;
+}
+.gtu {
+  font-size: 50px;
+  margin-left: 20px;
+  margin-top: 15px;
+  color: red;
+}
+.sgh {
+  font-size: 30px;
+  margin-left: 220px;
+  color: aliceblue;
+}
+.captcha {
+  border: 1px solid black;
+}
+#search {
+  background-color: gray;
+  /* font-size: 18px; */
+}
+#search:hover {
+  background-color: rgb(188, 152, 152);
+}
+#t90 {
+  background-color: rgb(210, 180, 140);
+  /* font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;*/
+}
+#t91 {
+  background-color: rgb(250, 250, 210);
+  /* font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
+}
+#t92 {
+  background-color: rgb(255, 228, 196);
+}
+#t93 {
+  background-color: rgb(169, 226, 234);
+}
+#t94 {
+  background-color: rgb(247, 221, 117);
+}
