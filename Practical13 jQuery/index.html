@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Demo</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        color: white;
+        text-align: center;
+        line-height: 200px;
+        font-size: 24px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">Click Me</div>
+
+    <script>
+      // Wait for the DOM content to load
+      $(document).ready(function () {
+        // Add a click event handler to the box element
+        $(".box").click(function () {
+          // Change the background color and text of the box
+          $(this).css("background-color", "red").text("Clicked!");
+        });
+      });
+    </script>
+  </body>
+</html>
